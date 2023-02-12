@@ -1,7 +1,13 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y build-essential\
-	git zsh curl wget
+	git zsh curl wget locales
+
+ENV LANG="en_US.UTF-8"
+
+ENV LANGUAGE="en_US.UTF-8"
+
+RUN dpkg-reconfigure --frontend=noninteractive locales
 
 RUN useradd -ms /bin/bash perlu
 
@@ -30,3 +36,4 @@ WORKDIR projects
 CMD source ~/.bash_profile && /bin/bash -l
 
 
+#update-locale LANG=en_US.UTF-8 && update-locale LANGUAGE=en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8
