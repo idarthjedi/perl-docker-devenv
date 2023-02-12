@@ -12,7 +12,7 @@ Docker development environment for the latest version of Perl, using plenv, cpan
 
 2. Run the image.
 
-> docker run <image_name> 
+> docker run -td <image_name> 
 
 3. Attach VS Code to the running image.
 
