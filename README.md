@@ -8,7 +8,7 @@ Docker development environment for the latest version of Perl, using plenv, cpan
 
 > docker build -t <tag_name> .
 > or
-> docker pull darthjedi/perl-docker-env:<version>
+> docker pull darthjedi/perl-docker-env:version
 
 2. Run the image.
 
