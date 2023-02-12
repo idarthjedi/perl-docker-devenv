@@ -14,6 +14,6 @@ Docker development environment for the latest version of Perl, using plenv, cpan
 
 > docker run -td <image_name> 
 
-3. Attach VS Code to the running image.
+3. Attach VS Code to the running image (install perl Language Server & Debugger Extension if interested).
 
 NOTE: Remember containers are ephemeral, make sure that your source code is stored in a repo outside of the container.
