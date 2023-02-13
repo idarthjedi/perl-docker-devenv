@@ -24,7 +24,7 @@ docker run -td <image_name>
 or
 
 ```
-LOCAL_PROJ_DIR=(your_project_dir) && docker compose up -d
+LOCAL_PROJ_DIR=(your_project_dir) docker compose up -d
 ```
 
 3. Attach VS Code to the running image (install perl Language Server & Debugger Extension if interested).
