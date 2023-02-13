@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  perl-dev-env:
+    image: "darthjedi/perl-dev-env:latest"
+    volumes:
+      - type: bind
+        source: ${LOCAL_PROJ_DIR}/ 
+        target: /home/perlu/projects
+    tty: true    
